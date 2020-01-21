@@ -21,7 +21,7 @@ config({
 
 client.on("ready", () => {
     console.log(`I am online, my name is ${client.user.username}`); 
-    client.user.setGame(`Happy New Year 2020`)
+    client.user.setGame(`Joker is lying bealive meh`)
 client.user.setStatus("idle")
 });
 
