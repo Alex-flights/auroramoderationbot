@@ -21,8 +21,8 @@ config({
 
 client.on("ready", () => {
     console.log(`I am online, my name is ${client.user.username}`); 
-    client.user.setGame(`Joker is lying bealive meh`)
-client.user.setStatus("idle")
+    client.user.setGame(`Help: a?help`)
+client.user.setStatus("online")
 });
 
 client.on("message", async message => {
