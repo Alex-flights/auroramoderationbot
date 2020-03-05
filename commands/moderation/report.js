@@ -12,10 +12,10 @@ module.exports = {
         let rMember = message.mentions.members.first() || message.guild.get(args[0]);
 
         if (!rMember)
-            return message.reply("Oops i couldn't find that person. Did Aurora fall?").then(m => m.delete(5000));
+            return message.reply("Oops i couldn't find that person. Did Shrek fall?").then(m => m.delete(5000));
 
             if (rMember.hasPermission("BAN_MEMBERS") || rMember.user.bot)
-                return message.reply("Can't report that member. Did the plane fall?").then(m => m.delete(5000));
+                return message.reply("Can't report that member.").then(m => m.delete(5000));
 
             if (!args[1])
                 return message.channel.send("Please provide a reason for the report. Do not troll in here!").then(m => m.delete(5000));
@@ -23,7 +23,7 @@ module.exports = {
                 const channel = message.guild.channels.find(c => c.name === "📏report");
 
             if (!channel)
-                return message.channel.send("I could not find a \`#📏report\` Channel. Did Aurora died? **OOF**").then(m => m.delete(5000));
+                return message.channel.send("I could not find a \`#📏report\` Channel. Did Shrek died? **OOF**").then(m => m.delete(5000));
 
             const embed = new RichEmbed()
                 .setColor("#ff0000")
